@@ -6,11 +6,11 @@ include('header.php');
 <h4>Shto Detyra</h4>
 
 
-<form action="" class="shadow p-3 rounded w-50" method="post">
+<form action="store.php" class="shadow p-3 rounded w-50" method="post">
     <!-- Detyra -->
     <div class="mb-3">
-        <label for="detyra" class="form-label">Detyra</label>
-        <input type="text" name="detyra" id="detrya" class="form-control">
+        <label for="emri_detyres" class="form-label">Detyra</label>
+        <input type="text" name="emri_detyres" id="emri_detyres" class="form-control">
     </div>
     <!-- Data e Fillimit -->
     <div class="mb-3">
@@ -20,11 +20,11 @@ include('header.php');
     <!-- Data e Mbarimit -->
     <div class="mb-3">
         <label for="data_mbarimit" class="form-label">Data e Mbarimit</label>
-        <input type="date" name="data_mbarimit" id="data_mbarimit" class="form-control">
+        <input type="date" name="data_perfundimit" id="data_perfundimit" class="form-control">
     </div>
 
     <div class="mb-3">
-        <button class="btn btn-primary">Send</button>
+        <button class="btn btn-primary">Shto</button>
     </div>
 
 </form>

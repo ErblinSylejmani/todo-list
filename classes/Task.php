@@ -1,6 +1,6 @@
 <?php
 
-include_once('Database.php');
+include_once('config/Database.php');
 
 class Task extends Database{
     public function getAllTasks(){
@@ -17,8 +17,8 @@ class Task extends Database{
        
     }
 
-    public function addTask($emri_detyres,$data_fillimit,$data_perfundimit,$change_status){
-        $sql = "insert * into detyrat(emri_detyres,data_fillimit,data_perfundimit,change_status) value('$emri_detyres','$data_fillimit','$data_perfundimit','$change_status')";
+    public function addTask($emri_detyres,$data_fillimit,$data_perfundimit){
+        $sql = "insert  into detyrat(emri_detyres,data_fillimit,data_perfundimit) values('$emri_detyres','$data_fillimit','$data_perfundimit')";
 
         return $this->conn->query($sql);
     }
