@@ -1,6 +1,6 @@
 <?php
 
-include('../classes.Task.php');
+include('classes/Task.php');
 
 $id= $_GET['id'];
 $task = new Task();

@@ -21,6 +21,10 @@ class Task extends Database{
         $sql = "insert  into detyrat(emri_detyres,data_fillimit,data_perfundimit) values('$emri_detyres','$data_fillimit','$data_perfundimit')";
 
         return $this->conn->query($sql);
+
+        if($result){
+            header('Location:index.php');
+        }
     }
 
     public function updateTask($emri_detyres,$data_fillimit,$data_perfundimit,$change_status){
@@ -33,6 +37,10 @@ class Task extends Database{
         $sql = "delete from detyrat where id='$id'";
 
         return $this->conn->query($sql);
+
+        if($result){
+            header('Location:index.php');
+        }
     }
 
     public function changeStatus($change_status){

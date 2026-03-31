@@ -16,13 +16,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="shto_detyra.php">Shto Detyra</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Lista e Detyrave</a>
+          <a class="nav-link" href="edit.php">Edit Form</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
