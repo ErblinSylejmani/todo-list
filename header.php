@@ -25,6 +25,10 @@
         <li class="nav-item">
           <a class="nav-link" href="totali.php">Totali</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="signup_form.php">SignUp</a>
+        </li>
       </ul>
     </div>
   </div>
