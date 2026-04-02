@@ -21,9 +21,7 @@
         <li class="nav-item">
           <a class="nav-link" href="shto_detyra.php">Shto Detyra</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="edit.php">Edit Form</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>

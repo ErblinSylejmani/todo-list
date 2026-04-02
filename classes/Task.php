@@ -27,8 +27,8 @@ class Task extends Database{
         }
     }
 
-    public function updateTask($emri_detyres,$data_fillimit,$data_perfundimit,$change_status){
-        $sql = "update detyrat set emri_detyres='$emri_detyres',data_fillimit='$data_fillimit',data_perfundimit='$data_perfundimit'";
+    public function updateTask($emri_detyres,$data_fillimit,$data_perfundimit){
+        $sql = "update detyrat set emri_detyres='$emri_detyres',data_fillimit='$data_fillimit'";
 
         return $this->conn->query($sql);
     }
