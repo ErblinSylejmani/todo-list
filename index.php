@@ -18,6 +18,7 @@ $result = $task->getAllTasks();
                         <th>Emri Detyres</th>
                         <th>Data Fillimit</th>
                         <th>Data Perfundimit</th>
+                        <th>Statusi</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -29,7 +30,8 @@ $result = $task->getAllTasks();
                             <td><?php echo $t['emri_detyres'] ?></td>
                             <td><?php echo $t['data_fillimit'] ?></td>
                             <td><?php echo $t['data_perfundimit'] ?></td>
-                            <td><a class="btn btn-danger" href="delete.php?id=<?php echo $t['id']; ?>">Delete</a> <a class="btn btn-warning" href="edit.php?id=<?php echo $t['id']; ?>">Edit</a></td>
+                            <td><?php echo $t['change_status'] ?></td>
+                            <td><a class="btn btn-danger" href="delete.php?id=<?php echo $t['id']; ?>">Delete</a> <a class="btn btn-warning" href="edit.php?id=<?php echo $t['id']; ?>">Edit</a> <a class="btn btn-primary" href="change_status.php?id=<?php echo $t['id']; ?>">Change Status</a></td>
                             
 
                             

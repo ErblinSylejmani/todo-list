@@ -11,14 +11,14 @@ class Task extends Database{
     }
 
     public function getTaskById($id){
-        $sql = "select * from detyrat where id='$id'";
+        $sql = "select * from detyrat where id='$id' ";
 
         return $this->conn->query($sql);
        
     }
 
     public function addTask($emri_detyres,$data_fillimit,$data_perfundimit){
-        $sql = "insert  into detyrat(emri_detyres,data_fillimit,data_perfundimit) values('$emri_detyres','$data_fillimit','$data_perfundimit')";
+        $sql = "insert into detyrat(emri_detyres,data_fillimit,data_perfundimit) values('$emri_detyres','$data_fillimit','$data_perfundimit')";
 
         return $this->conn->query($sql);
 
@@ -27,8 +27,8 @@ class Task extends Database{
         }
     }
 
-    public function updateTask($emri_detyres,$data_fillimit,$data_perfundimit){
-        $sql = "update detyrat set emri_detyres='$emri_detyres',data_fillimit='$data_fillimit'";
+    public function updateTask($id,$emri_detyres,$data_fillimit,$data_perfundimit){
+        $sql = "update detyrat set emri_detyres='$emri_detyres',data_fillimit='$data_fillimit',data_perfundimit='$data_perfundimit' where id='$id' ";
 
         return $this->conn->query($sql);
     }
@@ -43,8 +43,8 @@ class Task extends Database{
         }
     }
 
-    public function changeStatus($change_status){
-       $sql = "update from detyrat where change_status='$change_status'";
+    public function changeStatus($id,$change_status){
+       $sql = "update detyrat set change_status='$change_status' where id='$id' ";
 
        return $this->conn->query($sql);
 

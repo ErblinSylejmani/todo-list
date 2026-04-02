@@ -36,5 +36,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         include('classes/Task.php');
         $task = new Task();
         $result = $task->addTask($emri_detyres,$data_fillimit,$data_perfundimit);
+
+        header('Location:index.php');
       }
 }

@@ -34,8 +34,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
       else{
         include('classes/Task.php');
-        
+        $id=$_POST['id'];
         $task = new Task();
-        $result = $task->updateTask($emri_detyres,$data_fillimit,$data_perfundimit);
+        $result = $task->updateTask($id,$emri_detyres,$data_fillimit,$data_perfundimit);
+
+        header('Location:index.php');
       }
 }
