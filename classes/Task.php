@@ -49,4 +49,34 @@ class Task extends Database{
        return $this->conn->query($sql);
 
     }
+
+    public function totaliDetyra(){ 
+        $sql = "SELECT COUNT(*) as totali FROM detyrat";
+
+        return $this->conn->query($sql);
+    }
+
+    public function detyraP(){ 
+        $sql = "SELECT COUNT(*) as totalip FROM detyrat where change_status='e perfunduar' ";
+
+        return $this->conn->query($sql);
+    }
+
+    public function detyraPa(){ 
+        $sql = "SELECT COUNT(*) as totali FROM detyrat where change_status='e paperfunduar' ";
+
+        return $this->conn->query($sql);
+    }
+
+    public function detyratPerfunduara(){
+        $sql = "select * from detyrat where change_status = 'e perfunduar' ";
+
+        return $this->conn->query($sql);
+    }
+
+    public function detyratPaperfunduara(){
+        $sql = "select * from detyrat where change_status = 'e paperfunduar' ";
+
+        return $this->conn->query($sql);
+    }
 }

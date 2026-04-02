@@ -2,9 +2,11 @@
 include('header.php');
 include('classes/Task.php');
 
+
 $task = new Task();
 $result = $task->getAllTasks();
 ?>
+
     <div class="container mt-5">
 
     <div class="row">
@@ -25,6 +27,7 @@ $result = $task->getAllTasks();
 
                 <tbody>
                     <?php foreach($result as $t){ ?>
+                  
                         <tr>
                             <td><?php echo $t['id'] ?></td>
                             <td><?php echo $t['emri_detyres'] ?></td>
@@ -32,6 +35,7 @@ $result = $task->getAllTasks();
                             <td><?php echo $t['data_perfundimit'] ?></td>
                             <td><?php echo $t['change_status'] ?></td>
                             <td><a class="btn btn-danger" href="delete.php?id=<?php echo $t['id']; ?>">Delete</a> <a class="btn btn-warning" href="edit.php?id=<?php echo $t['id']; ?>">Edit</a> <a class="btn btn-primary" href="change_status.php?id=<?php echo $t['id']; ?>">Change Status</a></td>
+                            
                             
 
                             

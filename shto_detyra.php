@@ -3,10 +3,12 @@ include('header.php');
 ?>
 
 <div class="container mt-5">
-<h4>Shto Detyra</h4>
+
 
 
 <form action="store.php" class="shadow p-3 rounded w-50" method="post">
+
+<h4>Shto Detyra</h4>
     <!-- Detyra -->
     <div class="mb-3">
         <label for="emri_detyres" class="form-label">Detyra</label>

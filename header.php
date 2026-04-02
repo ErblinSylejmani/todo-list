@@ -23,7 +23,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="totali.php">Totali</a>
         </li>
       </ul>
     </div>
